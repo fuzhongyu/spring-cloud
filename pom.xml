@@ -36,6 +36,7 @@
     <!-- Spring Cloud Eureka是Spring Cloud Netflix项目下的服务治理模块 -->
     <module>eureka-server</module>
     <module>eureka-client</module>
+    <module>eureka-client-consul</module>
   </modules>
 
 
