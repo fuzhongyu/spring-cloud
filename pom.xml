@@ -37,6 +37,9 @@
     <module>eureka-server</module>
     <module>eureka-client</module>
     <module>eureka-client-consul</module>
+    <module>eureka-consumer</module>
+    <module>eureka-consumer-ribbon</module>
+    <module>eureka-consumer-feign</module>
   </modules>
 
 
