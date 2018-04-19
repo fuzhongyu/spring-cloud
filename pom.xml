@@ -16,6 +16,12 @@
     <relativePath/>
   </parent>
 
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <java.version>1.8</java.version>
+  </properties>
+
 
   <dependencyManagement>
     <dependencies>
@@ -40,11 +46,25 @@
     <module>eureka-consumer</module>
     <module>eureka-consumer-ribbon</module>
     <module>eureka-consumer-feign</module>
-    <module>eureka-feign-upload-server</module>
     <module>eureka-consumer-feign-upload</module>
-    <module>config-repo</module>
     <module>config-server-git</module>
+    <module>config-client</module>
   </modules>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <dependencies>
+          <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>springloaded</artifactId>
+          </dependency>
+        </dependencies>
+      </plugin>
+    </plugins>
+  </build>
 
 
 </project>
