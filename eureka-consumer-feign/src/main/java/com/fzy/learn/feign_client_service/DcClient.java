@@ -1,4 +1,4 @@
-package com.fzy.learn.controllerInter;
+package com.fzy.learn.feign_client_service;
 
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;

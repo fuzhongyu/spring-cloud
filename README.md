@@ -47,7 +47,8 @@
       │
       ├──eureka-consumer-feign     //用feign实现服务的消费，服务消费者
       │
-
+      ├──eureka-consumer-feign-upload  //用feign实现文件上传
+      
       
    
    
