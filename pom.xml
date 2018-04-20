@@ -53,6 +53,8 @@
     <module>config-server-git-eureka</module>
     <module>eureka-consumer-feign-hystrix</module>
     <module>hystrix-dashboard</module>
+    <module>api-gateway</module>
+    <module>stream-hello</module>
   </modules>
 
   <build>

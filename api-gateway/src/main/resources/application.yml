@@ -1,0 +1,48 @@
+spring:
+  application:
+    name: api-gateway
+
+server:
+  port: 8100
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8081/eureka/
+
+
+#传统单实例路由配置
+#zuul:
+#  routes:
+#    user-service:
+#      path: /client/**
+#      url: http://localhost:8092/
+
+
+#传统多实例路由配置
+#zuul:
+#  routes:
+#    user-service:
+#      path: /client/**
+#      serviceId: user-service
+#
+#ribbon:
+#  eureka:
+#    enabled: false
+#user-service:
+#  ribbon:
+#    listOfServers: http://localhost:8092/,http://localhost:8094/
+
+
+#服务路由配置
+#zuul:
+#  routes:
+#    user-service:
+#      path: /client/**
+#      serviceId: eureka-client
+
+#服务路由配置（效果和上述一样）
+zuul:
+  routes:
+    eureka-client:
+      path: /client/**
