@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      discovery:
+        #开启通过服务来访问Config Server的功能
+        enabled: true
+        service-id: config-server
+      profile: default
+
+server:
+  port: 8098
+
+
+#配置注册服务器
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8081/eureka/

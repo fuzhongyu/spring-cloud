@@ -6,9 +6,7 @@ spring:
       server:
         git:
           uri: https://github.com/fuzhongyu/spring-cloud-config-repo
-#          search-paths: config-repo
-#          username:
-#          password:
+
 
 server:
   port: 8082
@@ -16,4 +14,6 @@ server:
 #配置注册服务器
 eureka:
   client:
-    service-url: http://localhost:8081/eureka/
+    serviceUrl:
+      defaultZone: http://localhost:8081/eureka/
+
