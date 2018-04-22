@@ -1,0 +1,17 @@
+server:
+  port: 8102
+
+spring:
+  application:
+    name: stream-sender
+  cloud:
+    stream:
+      bindings:
+        output:
+#指定了输入通道对应的主题名
+          destination: greetings
+          producer:
+#通过该参数指定了分区键的表达式规则，我们可以根据实际的输出消息规则来配置SpEL来生成合适的分区键
+            partitionKeyExpression: payload
+#该参数指定了消息分区的数量
+            partitionCount: 1

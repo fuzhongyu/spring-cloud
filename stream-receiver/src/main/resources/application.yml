@@ -1,0 +1,22 @@
+server:
+  port: 8101
+
+spring:
+  application:
+    name: stream-receiver
+  cloud:
+    stream:
+      bindings:
+        input:
+#指定该应用实例都属于Service-A消费组
+          group: Service-A
+#指定输入通道对应的主题名
+          destination: greetings
+          consumer:
+#通过该参数开启消费者分区功能
+            partitioned: true
+#该参数指定了当前消费者的总实例数量
+      instanceCount: 1
+#该参数设置当前实例的索引号，从0开始，最大值为spring.cloud.stream.instanceCount参数 - 1。
+#我们试验的时候需要启动多个实例，可以通过运行参数来为不同实例设置不同的索引值
+      instanceIndex: 0

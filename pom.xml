@@ -55,6 +55,9 @@
     <module>hystrix-dashboard</module>
     <module>api-gateway</module>
     <module>stream-hello</module>
+    <module>streamreceiver</module>
+    <module>stream-sender</module>
+    <module>stream-receiver</module>
   </modules>
 
   <build>
