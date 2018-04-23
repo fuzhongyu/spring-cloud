@@ -50,12 +50,12 @@
     </dependency>
 
     <!--配置Zipkin服务-->
-    <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-sleuth-zipkin</artifactId>
-    </dependency>
+    <!--<dependency>-->
+      <!--<groupId>org.springframework.cloud</groupId>-->
+      <!--<artifactId>spring-cloud-sleuth-zipkin</artifactId>-->
+    <!--</dependency>-->
 
-    <!--基于Spring Cloud Stream实现的消息中间件绑定器依赖-->
+    <!--基于Spring Cloud Stream实现的消息中间件绑定器依赖，***并需要将配置Zipkin服务依赖注释掉*** -->
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-sleuth-stream</artifactId>
