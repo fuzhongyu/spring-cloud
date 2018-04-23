@@ -23,6 +23,7 @@ public class DcController {
 
     @GetMapping("/consumer")
     public String dc() {
+        logger.info("======== call following-consumer =====");
         return consumerService.consumer();
     }
 }

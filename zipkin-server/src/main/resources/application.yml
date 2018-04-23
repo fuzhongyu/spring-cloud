@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: zipkin-server
+
+server:
+#zipkin的默认端口是9411，如果配置的是9411端口则客户端可以不配置zipkin信息
+  port: 9411

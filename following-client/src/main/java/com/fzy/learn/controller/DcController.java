@@ -27,9 +27,8 @@ public class DcController {
    */
   @GetMapping("/dc")
   public String dc() {
+    logger.info("====== call following-client ======");
     String services = "Services: " + discoveryClient.getServices();
-    System.out.println(services);
-//    int i=1/0;
     return services;
   }
 

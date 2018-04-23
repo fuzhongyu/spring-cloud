@@ -55,9 +55,11 @@
     <module>hystrix-dashboard</module>
     <module>api-gateway</module>
     <module>stream-hello</module>
-    <module>streamreceiver</module>
     <module>stream-sender</module>
     <module>stream-receiver</module>
+    <module>following-client</module>
+    <module>following-consumer</module>
+    <module>zipkin-server</module>
   </modules>
 
   <build>
