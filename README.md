@@ -62,7 +62,16 @@
       ├──api-gateway(端口8100)  //服务网关(zuul实现服务路由和过滤)
       │
       ├──stream-hello     //rabbitmq进行消息驱动
-      
+      │
+      ├──stream-receiver     //rabbitmq消息接收者
+      │
+      ├──stream-sender     //rabbitmq消息发送者
+      │
+      ├──following-clinet     //分布式服务跟踪(服务提供者)，包含日志收集
+      │
+      ├──following-server     //分布式服务跟踪(消费者)，包含日志收集
+      │
+      ├──zipkin-server     //分布式系统监控  
       
       
    
